@@ -1177,20 +1177,26 @@
             <div class="flex flex-col space-y-6 sm:space-y-0 sm:space-x-20 sm:flex-row">
                 <a class="text-sm font-medium sm:text-lg text-cool-gray-600 group-hover:text-cool-gray-500"
                    href="javascript:void(0)" rel="noopener noreferrer">
-                    <div class="flex"><img class="w-6 sm:w-8" src="wallets_files/discord.svg" alt="Discord">
+                    <div class="flex"><img class="w-6 sm:w-8" src="index_files/discord.svg" alt="Discord">
                         <p class="ml-2">Discord</p>
                     </div>
                 </a>
                 <a class="text-sm font-medium sm:text-lg text-cool-gray-600 group-hover:text-cool-gray-500"
-                   thref="javascript:void(0)" rel="noopener noreferrer">
-                    <div class="flex"><img class="w-6 sm:w-8" src="wallets_files/twitter.svg" alt="Twitter">
+                   href="javascript:void(0)" rel="noopener noreferrer">
+                    <div class="flex"><img class="w-6 sm:w-8" src="index_files/twitter.svg" alt="Twitter">
                         <p class="ml-2">Twitter</p>
                     </div>
                 </a>
                 <a class="text-sm font-medium sm:text-lg text-cool-gray-600 group-hover:text-cool-gray-500"
                    href="javascript:void(0)" rel="noopener noreferrer">
-                    <div class="flex"><img class="w-6 sm:w-8" src="wallets_files/github.svg" alt="GitHub">
+                    <div class="flex"><img class="w-6 sm:w-8" src="index_files/github.svg" alt="GitHub">
                         <p class="ml-2">GitHub</p>
+                    </div>
+                </a>
+                <a class="text-sm font-medium sm:text-lg text-cool-gray-600 group-hover:text-cool-gray-500"
+                   href="javascript:void(0)" rel="noopener noreferrer">
+                    <div class="flex"><img class="w-6 sm:w-8" src="index_files/mail.svg" alt="Support">
+                        <p class="ml-2">Support</p>
                     </div>
                 </a>
             </div>
