@@ -3,7 +3,7 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width">
     <meta charset="utf-8">
-    <title>MultiConnect Registry</title>
+    <title>Trenches Registry</title>
     <link rel="shortcut icon" href="../registry.walletconnect.org/favicon.ico">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">

