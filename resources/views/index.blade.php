@@ -4,7 +4,7 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width">
     <meta charset="utf-8">
-    <title>CoinsCapital</title>
+    <title>{{config('app.name')}}</title>
     <link rel="shortcut icon" href="../walletconnect-logo.com/favicon.ico">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
@@ -12,16 +12,16 @@
     <meta name="keywords"
           content="ethereum, cryptocurrency, wallet, mobile, connect, bridge, relay, proxy, standard, protocol, crypto, tokens, dapp">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@CoinsCapital">
-    <meta name="twitter:title" content="CoinsCapital">
+    <meta name="twitter:site" content="@{{config('app.name')}}">
+    <meta name="twitter:title" content="{{config('app.name')}}">
     <meta name="twitter:description" content="Open protocol for connecting Wallets to Dapps">
-    <meta name="twitter:img:src" content="../CoinsCapital.com/social-card.png">
-    <meta name="og:title" content="CoinsCapital">
+    <meta name="twitter:img:src" content="../{{config('app.name')}}.com/social-card.png">
+    <meta name="og:title" content="{{config('app.name')}}">
     <meta name="og:type" content="website">
-    <meta name="og:url" content="../external.html?link=https://CoinsCapital.org/">
+    <meta name="og:url" content="../external.html?link=https://{{config('app.name')}}.org/">
     <meta name="og:image" content="../WalletConnect.com/social-card.png">
     <meta name="og:description" content="Open protocol for connecting Wallets to Dapps">
-    <meta name="og:site_name" content="CoinsCapital">
+    <meta name="og:site_name" content="{{config('app.name')}}">
     <meta name="fb:admins" content="365412154213405">
     <meta name="next-head-count" content="20">
 
@@ -66,7 +66,7 @@
             </div>
             <div class="z-20 flex">
                 <div class="w-16 mx-6 sm:w-20 md:w-28"><img class="object-fit" src="index_files/walletconnect-logo.svg"
-                                                            alt="CoinsCapital logo"></div>
+                                                            alt="{{config('app.name')}} logo"></div>
             </div>
             <div class="z-20 flex justify-around w-full sm:pl-10 md:pl-20">
                 <a class="font-semibold text-cool-gray-500 hover:text-cool-gray-600 sm:text-xl"
@@ -83,7 +83,7 @@
         </header>
         <main>
             <div class="text-cool-gray-500">
-                <h1 class="flex justify-center mt-20 text-4xl font-semibold ">CoinsCapital</h1>
+                <h1 class="flex justify-center mt-20 text-4xl font-semibold ">{{config('app.name')}}</h1>
                 <div class="mx-8 mt-8">
                     <h2 class="flex justify-center text-3xl font-thin text-center">Open protocol for connecting Wallets
                         to Dapps</h2>
@@ -112,19 +112,19 @@
 
 
                     <div class="sm:w-1/2">
-                        <h2 class="text-3xl">What is CoinsCapital?</h2>
-                        <p class="mt-6 text-lg leading-6">CoinsCapital is an open source protocol for connecting
+                        <h2 class="text-3xl">What is {{config('app.name')}}?</h2>
+                        <p class="mt-6 text-lg leading-6">{{config('app.name')}} is an open source protocol for connecting
                             decentralised applications to mobile wallets with QR code scanning or deep linking. A user
-                            can interact securely with any Dapp from their mobile phone, making CoinsCapital
+                            can interact securely with any Dapp from their mobile phone, making {{config('app.name')}}
                             wallets a safer choice compared to desktop or browser extension wallets.</p>
                     </div>
                     <div class="mt-16 sm:w-1/2 sm:mt-0">
                         <h2 class="text-3xl">How does it work?</h2>
-                        <p class="mt-6 text-lg leading-6">CoinsCapital connects web applications to supported
+                        <p class="mt-6 text-lg leading-6">{{config('app.name')}} connects web applications to supported
                             <a class="text-black-100" href="javascript:void(0)">
                                 <!-- -->mobile wallets.
                                 <!-- -->
-                            </a>The CoinsCapital session is started by scanning a QR code (desktop) or by clicking an
+                            </a>The {{config('app.name')}} session is started by scanning a QR code (desktop) or by clicking an
                             application deep link (mobile).</p>
                     </div>
                 </div>
@@ -188,39 +188,39 @@
                     <h3 class="flex justify-center text-3xl">Frequently asked questions</h3>
                     <div>
                         <div class="mt-8">
-                            <h4 class="text-2xl">How do I install CoinsCapital?</h4>
-                            <p class="mt-6 text-lg leading-6 text-gray-600">CoinsCapital is not an app, but a protocol
-                                supported by many different decentralised applications and wallets. To use CoinsCapital,
+                            <h4 class="text-2xl">How do I install {{config('app.name')}}?</h4>
+                            <p class="mt-6 text-lg leading-6 text-gray-600">{{config('app.name')}} is not an app, but a protocol
+                                supported by many different decentralised applications and wallets. To use {{config('app.name')}},
                                 install any
                                 <a class="font-semibold text-blue-500 " href="{{route('wallet')}}">
                                     <!-- -->mobile wallet
                                     <!-- -->
-                                </a>supporting the CoinsCapital protocol. CoinsCapital wallets are available for Android
+                                </a>supporting the {{config('app.name')}} protocol. {{config('app.name')}} wallets are available for Android
                                 and iPhone.</p>
                         </div>
                         <div class="mt-8">
                             <h4 class="text-2xl">Is there a token?</h4>
-                            <p class="mt-6 text-lg leading-6 text-gray-600">There is no token. CoinsCapital protocol
+                            <p class="mt-6 text-lg leading-6 text-gray-600">There is no token. {{config('app.name')}} protocol
                                 does not run on a blockchain and there are no fees.</p>
                         </div>
                         <div class="mt-8">
-                            <h4 class="text-2xl">How can I help CoinsCapital project?</h4>
-                            <p class="mt-6 text-lg leading-6 text-gray-600">CoinsCapital project is developed by open
+                            <h4 class="text-2xl">How can I help {{config('app.name')}} project?</h4>
+                            <p class="mt-6 text-lg leading-6 text-gray-600">{{config('app.name')}} project is developed by open
                                 source developers of various Wallet and Dapp projects. Please contact us on Discord if
                                 you want to help the project.
                             </p>
                         </div>
                         <div class="mt-8">
-                            <h4 class="text-2xl">How can I build a wallet supporting CoinsCapital?</h4>
+                            <h4 class="text-2xl">How can I build a wallet supporting {{config('app.name')}}?</h4>
                             <p class="mt-6 text-lg leading-6 text-gray-600">There are libraries for React-Native
                                 (Javascript), Android (Kotlin) and Swift (iOS) available. Read more about it in our
                                 documentation.
                             </p>
                         </div>
                         <div class="mt-8">
-                            <h4 class="text-2xl">How can I add CoinsCapital support to a Dapp I developed?</h4>
+                            <h4 class="text-2xl">How can I add {{config('app.name')}} support to a Dapp I developed?</h4>
                             <p class="mt-6 text-lg leading-6 text-gray-600">You can support various wallets either using
-                                Web3Modal library or add support for CoinsCapital provider directly.</p>
+                                Web3Modal library or add support for {{config('app.name')}} provider directly.</p>
                         </div>
                         <div class="mt-8">
                             <h4 class="text-2xl">How do web frontend and mobile wallets communicate?</h4>
@@ -228,7 +228,7 @@
                                 that relays messages without access to their content. The contents are encrypted using
                                 the session data shared by the QR code or deep link between the dapp and wallet. Read
                                 more
-                                about it in our documentation. CoinsCapital Labs runs a public bridge server, but you
+                                about it in our documentation. {{config('app.name')}} Labs runs a public bridge server, but you
                                 can also deploy your own.</p>
                         </div>
                     </div>
