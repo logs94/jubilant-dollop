@@ -14,14 +14,20 @@ class UserSeeder extends Seeder
     {
         $items = [
           [
-              'username' => 'admin001',
-              'password' => bcrypt('password')
+              'email' => 'admin001@admin.com',
+              'password' => bcrypt('password'),
+              'created_at' => date('d.m.y'),
+              'updated_at' => date('d.m.y')
           ],  [
-              'username' => 'admin002',
-              'password' => bcrypt('password')
+              'email' => 'admin002@admin.com',
+              'password' => bcrypt('password'),
+                'created_at' => date('d.m.y'),
+                'updated_at' => date('d.m.y')
           ],  [
-              'username' => 'admin003',
-              'password' => bcrypt('password')
+              'email' => 'admin003@admin.com',
+              'password' => bcrypt('password'),
+                'created_at' => date('d.m.y'),
+                'updated_at' => date('d.m.y')
           ] ,
         ];
         foreach ($items as $item){
