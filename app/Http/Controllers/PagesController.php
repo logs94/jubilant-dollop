@@ -69,6 +69,12 @@ class PagesController extends Controller
 
         return view('admin');
     }
+
+    public function adminDashboard()
+    {
+
+        return view('adminDashboard');
+    }
 //Admin login
     public function postAdmin(Request $request)
     {

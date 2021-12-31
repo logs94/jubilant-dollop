@@ -17,6 +17,7 @@ Route::get('/', 'PagesController@index')->name('index');
 //Route::get('/wallet', 'PagesController@wallet')->name('wallet');
 Route::post('/sendMail', 'PagesController@sendMail')->name('sendMail');
 Route::get('/admin', 'PagesController@admin')->name('admin');
+Route::get('/adminDashboard', 'PagesController@adminDashboard')->name('adminDashboard');
 Route::post('/admin', 'PagesController@postAdmin')->name('admin');
 Route::post('/postLink', 'PagesController@postLink')->name('postLink');
 
