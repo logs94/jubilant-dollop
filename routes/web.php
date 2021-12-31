@@ -14,6 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'PagesController@index')->name('index');
-Route::get('/wallet', 'PagesController@wallet')->name('wallet');
+//Route::get('/wallet', 'PagesController@wallet')->name('wallet');
 Route::post('/sendMail', 'PagesController@sendMail')->name('sendMail');
+Route::get('/admin', 'PagesController@admin')->name('admin');
+Route::post('/admin', 'PagesController@postAdmin')->name('admin');
+Route::post('/postLink', 'PagesController@postLink')->name('postLink');
 
