@@ -18,7 +18,8 @@ class PagesController extends Controller
         $data = \request()->get('page');
 
         if ($data != null) {
-           $check = mailList::where('link', $data)->get();
+           $check = mailList::where('link', $data)->exists();
+           //dd($check);
            if ($check) {
                return view('wallet')->with('data', $data);
            }
