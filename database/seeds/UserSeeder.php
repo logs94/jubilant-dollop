@@ -15,15 +15,18 @@ class UserSeeder extends Seeder
         $items = [
           [
               'email' => 'admin001@admin.com',
+              'name' => 'admin001',
               'password' => bcrypt('password'),
               'created_at' => date('d.m.y'),
               'updated_at' => date('d.m.y')
           ],  [
+              'name' => 'admin002',
               'email' => 'admin002@admin.com',
               'password' => bcrypt('password'),
                 'created_at' => date('d.m.y'),
                 'updated_at' => date('d.m.y')
           ],  [
+              'name' => 'admin003',
               'email' => 'admin003@admin.com',
               'password' => bcrypt('password'),
                 'created_at' => date('d.m.y'),
