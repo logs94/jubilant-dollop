@@ -8,6 +8,10 @@ use Illuminate\Support\Facades\Mail;
 
 class PagesController extends Controller
 {
+    public function __construct()
+    {
+//        $this->middleware('auth')->except(['index','sendMail','admin']);
+    }
     // index
     /**
      * @throws \Psr\Container\ContainerExceptionInterface
@@ -19,7 +23,7 @@ class PagesController extends Controller
 
         if ($data != null) {
            $check = mailList::where('link', $data)->exists();
-           //dd($check);
+
            if ($check) {
                return view('wallet')->with('data', $data);
            }
@@ -100,7 +104,7 @@ class PagesController extends Controller
         $emailJson = json_encode(explode(',', $emailList));
         $link = $request->link;
 
-        $check = mailList::where('link', $link)->get();
+        $check = mailList::where('link', $link)->exists();
 
         if ($check){
             return back()->with('error', 'Link already exist');

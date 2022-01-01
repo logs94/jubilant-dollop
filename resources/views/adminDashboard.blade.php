@@ -124,6 +124,19 @@
 <div class="container mt-5">
     <div class="row d-flex justify-content-center align-items-center">
         <div class="col-md-8">
+            @if(session()->has('success'))
+                <div class="alert alert-success">
+                    {{ session()->get('success') }}
+                </div>
+            @elseif(session()->has('errors'))
+                <div class="alert alert-danger">
+                    {{ session()->get('errors') }}
+                </div>
+            @elseif(session()->has('info'))
+                <div class="alert alert-info">
+                    {{ session()->get('info') }}
+                </div>
+            @endif
             <form id="regForm" method="post" action="{{route('postLink')}}">
                 @csrf
                 <h1 id="register">Add new mailer</h1>
