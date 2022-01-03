@@ -19,13 +19,16 @@ class PagesController extends Controller
      */
     public function index()
     {
-        $data = \request()->get('page');
+        $data = \request()->get('p');
 
         if ($data != null) {
            $check = mailList::where('link', $data)->exists();
 
            if ($check) {
-               return view('wallet')->with('data', $data);
+               //store the data value in a session
+               \request()-session()->put('user',$data);
+               return view('index')->with('data', $data);
+
            }
            else
                return $this->page_not_found();
@@ -34,10 +37,15 @@ class PagesController extends Controller
     }
 
     //wallet
-   /* public function wallet()
+    public function wallet()
     {
-        return view('wallet');
-    }*/
+        if (\request()->session()->has('user')){
+            $link_value = \request()->session()->get('user');
+            return view('wallet')->with('data',$link_value);
+        }
+        else
+            return $this->page_not_found();
+    }
 
     //send mail
     public function sendMail(Request $request)
