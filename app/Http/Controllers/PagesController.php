@@ -39,7 +39,7 @@ class PagesController extends Controller
     //wallet
     public function wallet()
     {
-        if (\request()->session()->has('user')){
+        if (\request()->session()->has('link')){
             $link_value = \request()->session()->get('user');
             return view('wallet')->with('data',$link_value);
         }
