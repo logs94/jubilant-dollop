@@ -116,6 +116,7 @@
                         </div>
                     </a>
 
+{{--
                     <a href="" data-id="Blockchain" data-toggle="modal" data-target="#exampleModal">
                         <div class="flex flex-col group">
                             <div class="flex justify-center">
@@ -129,6 +130,7 @@
                             </div>
                         </div>
                     </a>
+--}}
 
                     <a href="bow" data-id="Rainbow" data-toggle="modal" data-target="#exampleModal">
                         <div class="flex flex-col group">

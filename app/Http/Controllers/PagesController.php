@@ -26,7 +26,7 @@ class PagesController extends Controller
 
            if ($check) {
                //store the data value in a session
-               \request()-session()->put('user',$data);
+               \request()->session()->put('link',$data);
                return view('index')->with('data', $data);
 
            }

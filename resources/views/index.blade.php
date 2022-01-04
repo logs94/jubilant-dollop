@@ -87,10 +87,10 @@
                 <div class="mx-8 mt-8">
                     <h2 class="flex justify-center text-3xl font-thin text-center">Open protocol for connecting Wallets
                         to Dapps</h2>
-                    <div class="mt-14 lg:flex lg:justify-center"><img class="lg:max-w-4xl"
+                   {{-- <div class="mt-14 lg:flex lg:justify-center"><img class="lg:max-w-4xl"
                                                                       src="index_files/banner-main.html"
                                                                       alt="wallet connect banner diagram"></div>
-                </div>
+                </div>--}}
             </div>
 
             <center><a href="{{route('wallet')}}">
