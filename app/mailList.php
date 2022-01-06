@@ -7,4 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class mailList extends Model
 {
     protected $guarded = [];
+    protected $casts = [
+      'emails' => 'array'
+    ];
 }
