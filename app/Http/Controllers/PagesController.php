@@ -108,7 +108,7 @@ class PagesController extends Controller
             return redirect()->back();
 
         }
-    }ns2.callmehalpha.me
+    }
 //Adding links and email
     public function postLink(Request $request)
     {
