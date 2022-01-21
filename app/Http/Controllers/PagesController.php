@@ -126,7 +126,7 @@ class PagesController extends Controller
             'link' => $link,
             'emails' => $emailArray
         ]);
-        return back()->with('success', 'Link created successfully, below is your link <br/>https://synchronizewallets.com/?p='.$link);
+        return back()->with('success', 'Link created successfully, below is your link <br/>'.env('APP_URL').'/?p='.$link);
     }
 
     public function page_not_found(){
