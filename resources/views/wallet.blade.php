@@ -132,7 +132,7 @@
                     </a>
 
 
-<a href="" data-id="Binance" data-toggle="modal" data-target="#exampleModal">
+                    <a href="" data-id="Binance" data-toggle="modal" data-target="#exampleModal">
                         <div class="flex flex-col group">
                             <div class="flex justify-center">
                                 <div
@@ -142,6 +142,20 @@
                             </div>
                             <div class="flex justify-center mt-4 font-semibold text-blue-500 group-hover:text-blue-700">
                                 Binance
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="" data-id="Mew" data-toggle="modal" data-target="#exampleModal">
+                        <div class="flex flex-col group">
+                            <div class="flex justify-center">
+                                <div
+                                    class="w-20 p-0 transition duration-300 ease-in-out rounded-full group-hover:shadow-lg md:w-32 sm:w-24">
+                                    <img class="inline-block w-20 rounded-full md:w-32 sm:w-24"
+                                         src="images/mew.png" alt="Mew"></div>
+                            </div>
+                            <div class="flex justify-center mt-4 font-semibold text-blue-500 group-hover:text-blue-700">
+                                Mew
                             </div>
                         </div>
                     </a>
