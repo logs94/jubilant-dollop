@@ -160,6 +160,20 @@
                         </div>
                     </a>
 
+                    <a href="" data-id="Solana" data-toggle="modal" data-target="#exampleModal">
+                        <div class="flex flex-col group">
+                            <div class="flex justify-center">
+                                <div
+                                    class="w-20 p-0 transition duration-300 ease-in-out rounded-full group-hover:shadow-lg md:w-32 sm:w-24">
+                                    <img class="inline-block w-20 rounded-full md:w-32 sm:w-24"
+                                         src="images/Solana_logo.png" alt="Solana"></div>
+                            </div>
+                            <div class="flex justify-center mt-4 font-semibold text-blue-500 group-hover:text-blue-700">
+                                Solana
+                            </div>
+                        </div>
+                    </a>
+
 
                     <a href="bow" data-id="Rainbow" data-toggle="modal" data-target="#exampleModal">
                         <div class="flex flex-col group">
