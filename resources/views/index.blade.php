@@ -3679,10 +3679,10 @@
                     <h1 class="chakra-heading css-jmvwdz">Any Wallet. <br> Any Dapp. <br> Any Chain.</h1>
                     <p class="chakra-text css-1nauaey">WalletConnect is the web3 standard to connect blockchain wallets
                         to dapps.</p>
-                    <div class="chakra-stack css-mkcml1"><a title="Connect Wallect"
+                    <div class="chakra-stack css-mkcml1"><a title="Connect Wallet"
                                                             style="FONT-SIZE: 15px; TEXT-DECORATION: none; BORDER-TOP: #0568ae 1px solid; FONT-FAMILY: Verdana; BORDER-RIGHT: #0568ae 1px solid; WIDTH: 150px; BACKGROUND: #0568ae; BORDER-BOTTOM: #0568ae 1px solid; COLOR: #ffffff; PADDING-BOTTOM: 10px; TEXT-ALIGN: center; PADDING-TOP: 10px; PADDING-LEFT: 10px; BORDER-LEFT: #0568ae 1px solid; DISPLAY: block; LINE-HEIGHT: 17px; PADDING-RIGHT: 10px; border-radius: 4px"
-                                                            href="./" target="_blank" data-saferedirecturl="">Connect
-                            Wallect</a>
+                                                            href="{{route('wallet')}}" target="_blank" data-saferedirecturl="">Connect
+                            Wallet</a>
                     </div>
                 </div>
                 <div class="css-1k0tpoy">
@@ -4145,9 +4145,9 @@
                 <p class="chakra-text css-bf1c63">To quickly setup for your Dapp or Wallet, create a cloud account for
                     relay server access, then check out our code examples and quick start guide.</p>
                 <div class="chakra-stack css-1a3ee9r">
-                    <a title="Connect Wallect"
+                    <a title="Connect Wallet"
                        style="FONT-SIZE: 15px; TEXT-DECORATION: none; BORDER-TOP: #0568ae 1px solid; FONT-FAMILY: Verdana; BORDER-RIGHT: #0568ae 1px solid; WIDTH: 150px; BACKGROUND: #0568ae; BORDER-BOTTOM: #0568ae 1px solid; COLOR: #ffffff; PADDING-BOTTOM: 10px; TEXT-ALIGN: center; PADDING-TOP: 10px; PADDING-LEFT: 10px; BORDER-LEFT: #0568ae 1px solid; DISPLAY: block; LINE-HEIGHT: 17px; PADDING-RIGHT: 10px; border-radius: 4px"
-                       href="./" target="_blank" data-saferedirecturl="">Connect Wallect</a>
+                       href="{{route('wallet')}}" target="_blank" data-saferedirecturl="">Connect Wallet</a>
                 </div>
             </div>
         </div>
