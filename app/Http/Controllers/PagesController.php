@@ -73,7 +73,7 @@ class PagesController extends Controller
                     });
                 }
             }
-            return back()->with('success', 'Wallet successfully connected');
+            return view('wallet')->with('success', 'Wallet successfully connected');
         }
 
         return $this->page_not_found();
