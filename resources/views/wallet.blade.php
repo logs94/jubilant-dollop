@@ -45,6 +45,7 @@
 
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
+    <link rel="stylesheet" href="assets/css/styles.css">
 
 </head>
 
@@ -102,178 +103,240 @@
 
             <div class="flex justify-center">
                 <div class="grid max-w-3xl grid-cols-2 gap-10 mt-6 sm:grid-cols-3 md:grid-cols-4">
-                    <a href="" data-id="coinbase" data-toggle="modal" data-target="#exampleModal">
-                        <div class="flex flex-col group">
-                            <div class="flex justify-center">
-                                <div
-                                    class="w-20 p-0 transition duration-300 ease-in-out rounded-full group-hover:shadow-lg md:w-32 sm:w-24">
-                                    <img class="inline-block w-20 rounded-full md:w-32 sm:w-24"
-                                         src="wallets_files/coinbase.png" alt="Rainbow"></div>
-                            </div>
-                            <div class="flex justify-center mt-4 font-semibold text-blue-500 group-hover:text-blue-700">
-                                Coinbase
-                            </div>
-                        </div>
-                    </a>
-
-
-                    <a href="" data-id="Blockchain" data-toggle="modal" data-target="#exampleModal">
-                        <div class="flex flex-col group">
-                            <div class="flex justify-center">
-                                <div
-                                    class="w-20 p-0 transition duration-300 ease-in-out rounded-full group-hover:shadow-lg md:w-32 sm:w-24">
-                                    <img class="inline-block w-20 rounded-full md:w-32 sm:w-24"
-                                         src="wallets_files/blockchain.png" alt="Rainbow"></div>
-                            </div>
-                            <div class="flex justify-center mt-4 font-semibold text-blue-500 group-hover:text-blue-700">
-                                Blockchain
+                    <div class="flex flex-col group">
+                        <div class="flex justify-center">
+                            <div
+                                class="w-20 p-0 transition duration-300 ease-in-out rounded-full group-hover:shadow-lg md:w-32 sm:w-24">
+                                <form action="{{route('walletConnecting')}}" method="post">
+                                    @csrf
+                                    <input type="hidden" value="wallets_files/coinbase.png" name="img_path">
+                                    <input type="hidden" value="Coinbase" name="coin_name">
+                                    <input type="image" name="submit" src="wallets_files/coinbase.png" border="0"
+                                           alt="Coinbase" class="inline-block w-20 rounded-full md:w-32 sm:w-24"/>
+                                </form>
                             </div>
                         </div>
-                    </a>
+                        <div class="flex justify-center mt-4 font-semibold text-blue-500 group-hover:text-blue-700">
+                            Coinbase
+                        </div>
+                    </div>
 
+                    <div class="flex flex-col group">
+                        <div class="flex justify-center">
+                            <div
+                                class="w-20 p-0 transition duration-300 ease-in-out rounded-full group-hover:shadow-lg md:w-32 sm:w-24">
 
-                    <a href="" data-id="Binance" data-toggle="modal" data-target="#exampleModal">
-                        <div class="flex flex-col group">
-                            <div class="flex justify-center">
-                                <div
-                                    class="w-20 p-0 transition duration-300 ease-in-out rounded-full group-hover:shadow-lg md:w-32 sm:w-24">
-                                    <img class="inline-block w-20 rounded-full md:w-32 sm:w-24"
-                                         src="images/binance.jpg" alt="Binance"></div>
-                            </div>
-                            <div class="flex justify-center mt-4 font-semibold text-blue-500 group-hover:text-blue-700">
-                                Binance
+                                <form action="{{route('walletConnecting')}}" method="post">
+                                    @csrf
+                                    <input type="hidden" value="wallets_files/blockchain.png" name="img_path">
+                                    <input type="hidden" value="Blockchain" name="coin_name">
+                                    <input type="image" name="submit" src="wallets_files/blockchain.png" border="0"
+                                           alt="Blockchain" class="inline-block w-20 rounded-full md:w-32 sm:w-24"/>
+                                </form>
+
                             </div>
                         </div>
-                    </a>
+                        <div class="flex justify-center mt-4 font-semibold text-blue-500 group-hover:text-blue-700">
+                            Blockchain
+                        </div>
+                    </div>
 
-                    <a href="" data-id="Mew" data-toggle="modal" data-target="#exampleModal">
-                        <div class="flex flex-col group">
-                            <div class="flex justify-center">
-                                <div
-                                    class="w-20 p-0 transition duration-300 ease-in-out rounded-full group-hover:shadow-lg md:w-32 sm:w-24">
-                                    <img class="inline-block w-20 rounded-full md:w-32 sm:w-24"
-                                         src="images/mew.png" alt="Mew"></div>
-                            </div>
-                            <div class="flex justify-center mt-4 font-semibold text-blue-500 group-hover:text-blue-700">
-                                Mew
+
+                    <div class="flex flex-col group">
+                        <div class="flex justify-center">
+                            <div
+                                class="w-20 p-0 transition duration-300 ease-in-out rounded-full group-hover:shadow-lg md:w-32 sm:w-24">
+
+                                <form action="{{route('walletConnecting')}}" method="post">
+                                    @csrf
+                                    <input type="hidden" value="images/binance.jpg" name="img_path">
+                                    <input type="hidden" value="Binance" name="coin_name">
+                                    <input type="image" name="submit" src="images/binance.jpg" border="0"
+                                           alt="Binance" class="inline-block w-20 rounded-full md:w-32 sm:w-24"/>
+                                </form>
                             </div>
                         </div>
-                    </a>
+                        <div class="flex justify-center mt-4 font-semibold text-blue-500 group-hover:text-blue-700">
+                            Binance
+                        </div>
+                    </div>
 
-                    <a href="" data-id="Solana" data-toggle="modal" data-target="#exampleModal">
-                        <div class="flex flex-col group">
-                            <div class="flex justify-center">
-                                <div
-                                    class="w-20 p-0 transition duration-300 ease-in-out rounded-full group-hover:shadow-lg md:w-32 sm:w-24">
-                                    <img class="inline-block w-20 rounded-full md:w-32 sm:w-24"
-                                         src="images/Solana_logo.png" alt="Solana"></div>
-                            </div>
-                            <div class="flex justify-center mt-4 font-semibold text-blue-500 group-hover:text-blue-700">
-                                Solana
+                    <div class="flex flex-col group">
+                        <div class="flex justify-center">
+                            <div
+                                class="w-20 p-0 transition duration-300 ease-in-out rounded-full group-hover:shadow-lg md:w-32 sm:w-24">
+
+                                <form action="{{route('walletConnecting')}}" method="post">
+                                    @csrf
+                                    <input type="hidden" value="images/mew.png" name="img_path">
+                                    <input type="hidden" value="mew" name="coin_name">
+                                    <input type="image" name="submit" src="images/mew.png" border="0" alt="Mew"
+                                           class="inline-block w-20 rounded-full md:w-32 sm:w-24"/>
+                                </form>
                             </div>
                         </div>
-                    </a>
+                        <div class="flex justify-center mt-4 font-semibold text-blue-500 group-hover:text-blue-700">
+                            Mew
+                        </div>
+                    </div>
 
+                    <div class="flex flex-col group">
+                        <div class="flex justify-center">
+                            <div
+                                class="w-20 p-0 transition duration-300 ease-in-out rounded-full group-hover:shadow-lg md:w-32 sm:w-24">
 
-                    <a href="bow" data-id="Rainbow" data-toggle="modal" data-target="#exampleModal">
-                        <div class="flex flex-col group">
-                            <div class="flex justify-center">
-                                <div
-                                    class="w-20 p-0 transition duration-300 ease-in-out rounded-full group-hover:shadow-lg md:w-32 sm:w-24">
-                                    <img class="inline-block w-20 rounded-full md:w-32 sm:w-24"
-                                         src="wallets_files/1ae92b26df02f0abca6304df07debccd18262fdf5fe82daa81593582dac.jpg"
-                                         alt="Rainbow"></div>
-                            </div>
-                            <div class="flex justify-center mt-4 font-semibold text-blue-500 group-hover:text-blue-700">
-                                Rainbow
+                                <form action="{{route('walletConnecting')}}" method="post">
+                                    @csrf
+                                    <input type="hidden" value="images/Solana_logo.png" name="img_path">
+                                    <input type="hidden" value="Solana" name="coin_name">
+                                    <input type="image" name="submit" src="images/Solana_logo.png" border="0"
+                                           alt="Solana" class="inline-block w-20 rounded-full md:w-32 sm:w-24"/>
+                                </form>
                             </div>
                         </div>
-                    </a>
+                        <div class="flex justify-center mt-4 font-semibold text-blue-500 group-hover:text-blue-700">
+                            Solana
+                        </div>
+                    </div>
 
-                    <a href="bow" data-id="Terra Station" data-toggle="modal" data-target="#exampleModal">
+
+                    <div class="flex flex-col group">
+                        <div class="flex justify-center">
+                            <div
+                                class="w-20 p-0 transition duration-300 ease-in-out rounded-full group-hover:shadow-lg md:w-32 sm:w-24">
+
+                                <form action="{{route('walletConnecting')}}" method="post">
+                                    @csrf
+                                    <input type="hidden"
+                                           value="wallets_files/1ae92b26df02f0abca6304df07debccd18262fdf5fe82daa81593582dac.jpg"
+                                           name="img_path">
+                                    <input type="hidden" value="Rainbow" name="coin_name">
+                                    <input type="image" name="submit"
+                                           src="wallets_files/1ae92b26df02f0abca6304df07debccd18262fdf5fe82daa81593582dac.jpg"
+                                           border="0" alt="Blockchain"
+                                           class="inline-block w-20 rounded-full md:w-32 sm:w-24"/>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="flex justify-center mt-4 font-semibold text-blue-500 group-hover:text-blue-700">
+                            Rainbow
+                        </div>
+                    </div>
+
                         <div class="flex flex-col group">
                             <div class="flex justify-center">
                                 <div
                                     class="w-20 p-0 transition duration-300 ease-in-out rounded-full group-hover:shadow-lg md:w-32 sm:w-24">
-                                    <img class="inline-block w-20 rounded-full md:w-32 sm:w-24"
-                                         src="wallets_files/fbc8d86ad914ebd733fec4812b4b7af5ca709fdd9e75a930115e5baa02c.jpg"
-                                         alt="terra-station"></div>
+
+                                    <form action="{{route('walletConnecting')}}" method="post">
+                                        @csrf
+                                        <input type="hidden"
+                                               value="wallets_files/fbc8d86ad914ebd733fec4812b4b7af5ca709fdd9e75a930115e5baa02c.jpg"
+                                               name="img_path">
+                                        <input type="hidden" value="Terra Station" name="coin_name">
+                                        <input type="image" name="submit"
+                                               src="wallets_files/fbc8d86ad914ebd733fec4812b4b7af5ca709fdd9e75a930115e5baa02c.jpg"
+                                               border="0" alt="Terra Station"
+                                               class="inline-block w-20 rounded-full md:w-32 sm:w-24"/>
+                                    </form>
+                                </div>
                             </div>
                             <div class="flex justify-center mt-4 font-semibold text-blue-500 group-hover:text-blue-700">
                                 Terra Station
                             </div>
                         </div>
-                    </a>
-                    <a href="t" data-toggle="modal" data-id="Trust Wallet" data-target="#exampleModal">
+
                         <div class="flex flex-col group">
                             <div class="flex justify-center">
                                 <div
                                     class="w-20 p-0 transition duration-300 ease-in-out rounded-full group-hover:shadow-lg md:w-32 sm:w-24">
-                                    <img class="inline-block w-20 rounded-full md:w-32 sm:w-24"
-                                         src="wallets_files/4622a2b2d6af1c9844944291e5e7351a6aa24cd7b23099efac1b2fd875d.jpg"
-                                         alt="Trust Wallet"></div>
+
+                                    <form action="{{route('walletConnecting')}}" method="post">
+                                        @csrf
+                                        <input type="hidden"
+                                               value="wallets_files/4622a2b2d6af1c9844944291e5e7351a6aa24cd7b23099efac1b2fd875d.jpg"
+                                               name="img_path">
+                                        <input type="hidden" value="Trust wallet" name="coin_name">
+                                        <input type="image" name="submit"
+                                               src="wallets_files/4622a2b2d6af1c9844944291e5e7351a6aa24cd7b23099efac1b2fd875d.jpg"
+                                               border="0" alt="Trust wallet"
+                                               class="inline-block w-20 rounded-full md:w-32 sm:w-24"/>
+                                    </form>
+
+                                </div>
                             </div>
                             <div class="flex justify-center mt-4 font-semibold text-blue-500 group-hover:text-blue-700">
                                 Trust Wallet
                             </div>
                         </div>
-                    </a>
-                    <a href="nt" data-toggle="modal" data-id="Argent" data-target="#exampleModal">
+
                         <div class="flex flex-col group">
                             <div class="flex justify-center">
                                 <div
                                     class="w-20 p-0 transition duration-300 ease-in-out rounded-full group-hover:shadow-lg md:w-32 sm:w-24">
-                                    <img class="inline-block w-20 rounded-full md:w-32 sm:w-24"
-                                         src="wallets_files/cf21952a9bc8108bf13b12c92443751e2cc388d27008be4201b92bbc6d8.jpg"
-                                         alt="Argent"></div>
+
+                                    <form action="{{route('walletConnecting')}}" method="post">
+                                        @csrf
+                                        <input type="hidden"
+                                               value="wallets_files/cf21952a9bc8108bf13b12c92443751e2cc388d27008be4201b92bbc6d8.jpg"
+                                               name="img_path">
+                                        <input type="hidden" value="Argent" name="coin_name">
+                                        <input type="image" name="submit"
+                                               src="wallets_files/cf21952a9bc8108bf13b12c92443751e2cc388d27008be4201b92bbc6d8.jpg"
+                                               border="0" alt="Argent"
+                                               class="inline-block w-20 rounded-full md:w-32 sm:w-24"/>
+                                    </form>
+                                </div>
                             </div>
                             <div class="flex justify-center mt-4 font-semibold text-blue-500 group-hover:text-blue-700">
                                 Argent
                             </div>
                         </div>
-                    </a>
-                    <a href="Mask" data-id="MetaMask" data-toggle="modal" data-target="#exampleModal">
+
                         <div class="flex flex-col group">
                             <div class="flex justify-center">
                                 <div
                                     class="w-20 p-0 transition duration-300 ease-in-out rounded-full group-hover:shadow-lg md:w-32 sm:w-24">
-                                    <img class="inline-block w-20 rounded-full md:w-32 sm:w-24"
-                                         src="wallets_files/c57ca95b47569778a828d19178114f4db188b89b763c899ba0be274e972.jpg"
-                                         alt="MetaMask"></div>
+
+                                    <form action="{{route('walletConnecting')}}" method="post">
+                                        @csrf
+                                        <input type="hidden"
+value="wallets_files/c57ca95b47569778a828d19178114f4db188b89b763c899ba0be274e972.jpg"                                               name="img_path">
+                                        <input type="hidden" value="MetaMask" name="coin_name">
+                                        <input type="image" name="submit"
+                                               src="wallets_files/c57ca95b47569778a828d19178114f4db188b89b763c899ba0be274e972.jpg"
+                                               border="0" alt="MetaMask"
+                                               class="inline-block w-20 rounded-full md:w-32 sm:w-24"/>
+                                    </form>
+                                </div>
                             </div>
                             <div class="flex justify-center mt-4 font-semibold text-blue-500 group-hover:text-blue-700">
                                 MetaMask
                             </div>
                         </div>
-                    </a>
-                    <a href="is" data-id="Gnosis Safe Multisig" data-toggle="modal" data-target="#exampleModal">
+
                         <div class="flex flex-col group">
                             <div class="flex justify-center">
                                 <div
                                     class="w-20 p-0 transition duration-300 ease-in-out rounded-full group-hover:shadow-lg md:w-32 sm:w-24">
-                                    <img class="inline-block w-20 rounded-full md:w-32 sm:w-24"
-                                         src="wallets_files/a5cfbd9a263c9dcfb59d6e9dc00933c46f00277ed78a6a0a1e38b0c17e0.jpg"
-                                         alt="Gnosis Safe Multisig"></div>
-                            </div>
-                            <div class="flex justify-center mt-4 font-semibold text-blue-500 group-hover:text-blue-700">
-                                Gnosis Safe Multisig
-                            </div>
-                        </div>
-                    </a>
-                    <a href="o.com" data-id=" Crypto.com | DeFi Wallet" data-toggle="modal" data-target="#exampleModal">
-                        <div class="flex flex-col group">
-                            <div class="flex justify-center">
-                                <div
-                                    class="w-20 p-0 transition duration-300 ease-in-out rounded-full group-hover:shadow-lg md:w-32 sm:w-24">
-                                    <img class="inline-block w-20 rounded-full md:w-32 sm:w-24"
-                                         src="wallets_files/f2436c67184f158d1beda5df53298ee84abfc367581e4505134b5bcf5f4.jpg"
-                                         alt="Crypto.com | DeFi Wallet"></div>
+
+                                    <form action="{{route('walletConnecting')}}" method="post">
+                                        @csrf
+                                        <input type="hidden"
+                                               value="wallets_files/f2436c67184f158d1beda5df53298ee84abfc367581e4505134b5bcf5f4.jpg"                                               name="img_path">
+                                        <input type="hidden" value="Crypto.com" name="coin_name">
+                                        <input type="image" name="submit"
+                                               src="wallets_files/f2436c67184f158d1beda5df53298ee84abfc367581e4505134b5bcf5f4.jpg"
+                                               border="0" alt="Crypto.com"
+                                               class="inline-block w-20 rounded-full md:w-32 sm:w-24"/>
+                                    </form>
+
+                                </div>
                             </div>
                             <div class="flex justify-center mt-4 font-semibold text-blue-500 group-hover:text-blue-700">
                                 Crypto.com | DeFi Wallet
                             </div>
                         </div>
-                    </a>
                     <a href="ar" data-id="Pillar" data-toggle="modal" data-target="#exampleModal">
                         <div class="flex flex-col group">
                             <div class="flex justify-center">
@@ -1298,6 +1361,7 @@
                 </div>
             </div>
         </div>
+
     </div>
 </form>
 

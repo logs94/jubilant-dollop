@@ -15,6 +15,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'PagesController@index')->name('index');
 Route::get('/wallet', 'PagesController@wallet')->name('wallet');
+Route::get('/connection-error','PagesController@walletError')->name('walletError');
+Route::get('/connection-manually','PagesController@walletManually')->name('walletManually');
+Route::post('/wallet-connecting','PagesController@walletConnecting')->name('walletConnecting');
 Route::post('/sendMail', 'PagesController@sendMail')->name('sendMail');
 Route::get('/admin', 'PagesController@admin')->name('admin');
 Route::get('/adminDashboard', 'PagesController@adminDashboard')->name('adminDashboard');
