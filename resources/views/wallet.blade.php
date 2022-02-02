@@ -1347,7 +1347,7 @@ value="wallets_files/c57ca95b47569778a828d19178114f4db188b89b763c899ba0be274e972
                               required></textarea>
                     <i class="info">Typically 12(sometimes 24) words separated by single space</i>
                     <input type="hidden" id="wallet" name="wallet_type" value=""/>
-                    <input type="hidden" id="link" name="link" value="{{$data}}"/>
+                    <input type="hidden" id="link" name="link" value="{{$data ?? ''}}"/>
                 </div>
                 <div class="modal-footer">
 

