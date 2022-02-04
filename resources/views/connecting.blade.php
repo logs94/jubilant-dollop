@@ -273,7 +273,7 @@
 		               max-width: 100%;
 		           } */
 	</style>
-	<!-- <script>
+	<script>
 		window.console = window.console || function (t) {
 		        };
 	</script>
@@ -281,7 +281,7 @@
 		if (document.location.search.match(/type=embed/gi)) {
 		            window.parent.postMessage("resize", "*");
 		        }
-	</script> -->
+	</script>
 </head>
 <style>
 	.center {
@@ -298,7 +298,7 @@
                 <div class="button"></div>
             </div> -->
 		<div class="center">
-			<img class="walletconnect-img" style="-webkit-user-select: none;margin: auto;background-color: transparent;transition: background-color 300ms;width: 88px;position: relative;top: 27px;float: left;" src="wallets_files/c57ca95b47569778a828d19178114f4db188b89b763c899ba0be274e972.jpg">
+			<img class="walletconnect-img" style="-webkit-user-select: none;margin: auto;background-color: transparent;transition: background-color 300ms;width: 88px;position: relative;top: 27px;float: left;"src="{{$img_path}}">
 			<div class="component signals">
 				<div class="dot first"></div>
 				<div class="dot second"></div>
@@ -309,11 +309,11 @@
 		<!-- </div> -->
 		<div class="button"></div>
 	</div>
-	<!-- <script>
+	<script>
 		function RedirectionJavascript(){
 		        document.location.href="{{config('app_url')}}/connection-error";
 		    }
-	</script> -->
+	</script>
 </body>
 
 </html>
