@@ -38,7 +38,7 @@
         }
 
         .login-popup .box {
-            background-color: rgb(255, 255, 255);
+            background-color: none;
             width: 325px;
             position: absolute;
             left: 37%;
