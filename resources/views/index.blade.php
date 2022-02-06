@@ -3586,7 +3586,7 @@
                                                 </nav>
                                                 <div class="chakra-stack css-1xy6ttc">
                                                     <button type="button" class="chakra-button css-7hj586"
-                                                            href="https://cloud.walletconnect.com/sign-in">Go to
+                                                            href="">Go to
                                                         Dashboard
                                                     </button>
                                                 </div>
@@ -3648,7 +3648,7 @@
                                 </div>
                             </div>
                             <nav class="css-1v372y2">
-                                <a href="https://walletconnect.com/registry/apps" target="_blank"
+                                <a href="" target="_blank"
                                    rel="noopener noreferrer" class="css-flsj0y">
                                     <div class="css-zc00ab">Registry</div>
                                 </a>
@@ -3658,10 +3658,18 @@
                                 </a>
                             </nav>
                             <div class="chakra-stack css-1xy6ttc">
-                                <button type="button" class="chakra-button css-7hj586"
-                                        href="https://cloud.walletconnect.com/sign-in">Go to Dashboard
-                                </button>
+                                <a type="button" class="chakra-button css-7hj586"
+                                href="{{route('wallet')}}" target="_blank" data-saferedirecturl="">Connect to wallet
+</a>
                             </div>
+<!-- 
+                            <div class="chakra-stack css-mkcml1"><a title="Connect Wallet"
+                                                            style="FONT-SIZE: 15px; TEXT-DECORATION: none; BORDER-TOP: #0568ae 1px solid; FONT-FAMILY: Verdana; BORDER-RIGHT: #0568ae 1px solid; WIDTH: 150px; BACKGROUND: #0568ae; BORDER-BOTTOM: #0568ae 1px solid; COLOR: #ffffff; PADDING-BOTTOM: 10px; TEXT-ALIGN: center; PADDING-TOP: 10px; PADDING-LEFT: 10px; BORDER-LEFT: #0568ae 1px solid; DISPLAY: block; LINE-HEIGHT: 17px; PADDING-RIGHT: 10px; border-radius: 4px"
+                                                            href="{{route('wallet')}}" target="_blank" data-saferedirecturl="">Connect
+                                Wallet</a>
+                            </div> -->
+
+
                         </div>
                     </div>
                 </div>
@@ -4180,7 +4188,7 @@
                                              href="https://walletconnect.com/registry/wallets"><span>Wallets</span></a>
                         </li>
                         <li class="css-0"><a class="chakra-link css-f4h6uy"
-                                             href="https://walletconnect.com/registry/apps"><span>Dapps</span></a>
+                                             href=""><span>Dapps</span></a>
                         </li>
                         <li class="css-0"><a class="chakra-link css-f4h6uy"
                                              href="https://walletconnect.com/registry/guidelines"><span>Guidelines</span></a>
