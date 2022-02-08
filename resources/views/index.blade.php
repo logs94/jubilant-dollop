@@ -4191,7 +4191,7 @@
                                              href=""><span>Dapps</span></a>
                         </li>
                         <li class="css-0"><a class="chakra-link css-f4h6uy"
-                                             href="https://walletconnect.com/registry/guidelines"><span>Guidelines</span></a>
+                                             href=""><span>Guidelines</span></a>
                         </li>
                     </ul>
                 </div>
