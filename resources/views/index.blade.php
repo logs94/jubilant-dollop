@@ -3504,7 +3504,7 @@
                         <div class="chakra-stack css-1ocidfa"><a href="https://walletconnect.com/#" rel="home"
                                                                  class="css-0"><span class="css-f8n5zr">WalletConnect Website</span>
                                 <div align="center" href="/" class="css-iicfua">
-                                    <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1459 238" version="1.1"
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1459 238" version="1.1"
                                          class="css-uwwqev"><title>WalletConnect's logo</title>
                                         <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                                             <g id="walletconnect-logo-2">
@@ -3517,7 +3517,7 @@
                                             </g>
                                         </g>
                                     </svg>
-                                </div> -->
+                                </div>
                             </a>
                             <div class="chakra-stack css-1p2dnrb"></div>
                         </div>
@@ -3652,7 +3652,7 @@
                                    rel="noopener noreferrer" class="css-flsj0y">
                                     <div class="css-zc00ab">Registry</div>
                                 </a>
-                                <a href="https://docs.walletconnect.com/" target="_blank" rel="noopener noreferrer"
+                                <a href="" target="_blank" rel="noopener noreferrer"
                                    class="css-flsj0y">
                                     <div class="css-zc00ab">Docs</div>
                                 </a>
@@ -3760,7 +3760,7 @@
                     <h1 class="chakra-heading css-hoyqsn">Simple Integration</h1>
                     <p class="chakra-text css-1ix9wkv">WalletConnect can be integrated with just a few lines of code.
                         SDKs available for Javascript, iOS/Swift, and Android/Kotlin.</p>
-                    <a target="__blank" rel="noreferrer noopener" href="https://docs.walletconnect.com/">
+                    <a target="__blank" rel="noreferrer noopener" href="">
                         <div class="chakra-stack css-90b5dy">
                             <div class="css-0">Read the docs</div>
                             <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20"
@@ -4199,7 +4199,7 @@
                     <p class="chakra-text css-16j990k">Resources</p>
                     <ul class="chakra-stack css-1q8431l">
                         <li class="css-0"><a class="chakra-link css-f4h6uy"
-                                             href="https://docs.walletconnect.com/"><span>Documentation</span></a>
+                                             href=""><span>Documentation</span></a>
                         </li>
                         <li class="css-0"><a class="chakra-link css-f4h6uy"
                                              href="https://github.com/WalletConnect"><span>GitHub</span></a>
