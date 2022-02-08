@@ -3504,7 +3504,7 @@
                         <div class="chakra-stack css-1ocidfa"><a href="https://walletconnect.com/#" rel="home"
                                                                  class="css-0"><span class="css-f8n5zr">WalletConnect Website</span>
                                 <div align="center" href="/" class="css-iicfua">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1459 238" version="1.1"
+                                    <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1459 238" version="1.1"
                                          class="css-uwwqev"><title>WalletConnect's logo</title>
                                         <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                                             <g id="walletconnect-logo-2">
@@ -3516,7 +3516,7 @@
                                                     id="WalletConnect" fill="#3B99FC" fill-rule="nonzero"></path>
                                             </g>
                                         </g>
-                                    </svg>
+                                    </svg> -->
                                 </div>
                             </a>
                             <div class="chakra-stack css-1p2dnrb"></div>
