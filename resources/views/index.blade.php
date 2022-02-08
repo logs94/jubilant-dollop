@@ -3516,8 +3516,8 @@
                                                     id="WalletConnect" fill="#3B99FC" fill-rule="nonzero"></path>
                                             </g>
                                         </g>
-                                    </svg> -->
-                                </div>
+                                    </svg>
+                                </div> -->
                             </a>
                             <div class="chakra-stack css-1p2dnrb"></div>
                         </div>
