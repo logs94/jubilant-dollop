@@ -1,4 +1,4 @@
-<!-- <html lang="en" data-theme="light" style="--chakra-ui-color-mode:light;">
+<html lang="en" data-theme="light" style="--chakra-ui-color-mode:light;">
 
 <head>
     <meta name="og:image" content="https://walletconnect.com/social-card.png">
@@ -6,7 +6,7 @@
     <meta name="og:description"
           content="WalletConnect is the open source web3 standard to connect blockchain wallets to dapps.">
     <meta name="og:site_name" content="WalletConnect">
-    <meta name="fb:admins" content="365412154213405"> -->
+    <meta name="fb:admins" content="365412154213405">
     <meta name="viewport" content="width=device-width">
     <title>Home - {{config('app.name')}}</title>
     <meta name="description"
@@ -3548,7 +3548,7 @@
                 <div class="css-fway70">
                     <img alt="Screening talent" class="chakra-image css-w7cb44" src="./assets/blockchain-connect.png">
                 </div>
-                <div class="chakra-stack css-263hi8">
+                <!-- <div class="chakra-stack css-263hi8">
                     <div class="css-1288xpw">
                         <svg viewBox="0 0 24 24" focusable="false" class="chakra-icon css-138we7i">
                             <path fill="currentColor"
@@ -3587,7 +3587,7 @@
                         <p class="chakra-text css-dozho7">Also included is an optional Push server to allow native
                             applications to notify the user of incoming payloads for established connections.</p>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
