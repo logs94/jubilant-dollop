@@ -42,7 +42,7 @@ button{
 }
 
 body{
-  background-color: var(--body-color);
+  background-color: #e7e5e5!important;
   color: var(--text-color);
   position: relative;
 }
